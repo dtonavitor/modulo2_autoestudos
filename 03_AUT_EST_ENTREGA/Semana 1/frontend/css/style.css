@@ -42,17 +42,9 @@ li {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
 #main {
 	max-width: 800px;
 	min-height: 100%;
-	margin: 0 auto;
-	background-color: #FFFFFF;
-	padding: 1rem;
-	text-align: center;
-}
-
-#info, #profile {
 	margin: 0 auto;
 	background-color: #FFFFFF;
 	padding: 1rem;
