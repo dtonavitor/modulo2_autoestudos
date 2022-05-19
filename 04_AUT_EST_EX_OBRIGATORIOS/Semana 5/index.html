@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>Exercícios Semana 5</title>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <div>
+            <h1>Exercício 1</h1>
+            <div class="container">
+                <p>Informe o primeiro número: </p>
+                <input type="number" id = "num1"/>
+                <p>Informe o segundo número: </p>
+                <input type="number" id = "num2"/>
+                <p>Informe a operação: </p>
+                <ul>
+                    <li> + : soma</li>
+                    <li> - : subtração</li>
+                    <li> * : multiplicação</li>
+                    <li> / : divisão</li>
+                    <li> //: divisão inteira</li>
+                    <li> % : resto</li>
+                </ul>
+                <input type="text" id = "op" value=" "/>
+                <button onclick="calculate()">Calcular</button>
+                <br/>
+                <p id="result"></p>
+                <hr/>
+            </div>
+        </div>
+        <div>
+            <h1>Exercício 2</h1>
+            <div class="container">
+                <p>Informe o preço do produto: </p>
+                <input type="number" id = "price"/>
+                <button onclick="calculatePrice()">Calcular</button>
+                <br/>
+                <p id="troco100"></p>
+                <p id="troco50"></p>
+                <p id="troco20"></p>
+                <p id="troco10"></p>
+                <p id="troco5"></p>
+                <p id="troco2"></p>
+                <p id="troco1"></p>
+                <hr/>
+            </div>
+        </div>
+        <div>
+            <h1>Exercício 3</h1>
+            <div class="container">
+                <p>Informe uma lista de números inteiros separados por vírgula e sem espaços: </p>
+                <input type="text" id ="array"/>
+                <p>Informe o valor-foco: </p>
+                <input type="number" id ="focus"/>
+                <button onclick="order()">Ordenar</button>
+                <br/>
+                <p id="lista"></p>
+                <p id="value"></p>
+            </div>
+            <button onclick="reset()">Resetar tudo</button>
+        </div>
+    </body>
+</html>
