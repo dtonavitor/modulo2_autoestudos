@@ -1,0 +1,51 @@
+﻿/************************************************************************************************
+ SITE WEB
+************************************************************************************************/
+
+
+body, html{
+	background-color: #F0F0F0;
+}
+img {
+	width: 150px;
+}
+
+h1 {
+	color:#7b92e4;
+}
+
+h2 {
+	font-size: 23px;
+}
+
+h3 {
+	color:#7b92e4;
+	font-size: 25px;
+}
+
+p {
+	margin-left:-5px;
+	font-size: 20px;
+}
+
+li {
+	font-size: 20px;
+}
+
+
+#main {
+	max-width: 800px;
+	min-height: 100%;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	padding: 1rem;
+}
+
+#info, #profile {
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	padding: 1rem;
+}
+
+
+
