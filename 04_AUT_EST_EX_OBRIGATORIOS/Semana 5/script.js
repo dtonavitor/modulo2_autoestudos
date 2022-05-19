@@ -52,30 +52,30 @@ function calculatePrice() {
 
 function order() {
     var focus = document.querySelector("#focus").value
-    var lista = document.querySelector("#array").value;
-    if (lista.includes(" ")) {
-        document.querySelector("#lista").innerHTML = "Input Inválido";
+    var list = document.querySelector("#array").value;
+    if (list.includes(" ")) {
+        document.querySelector("#list").innerHTML = "Input Inválido";
     }
     else {
-        lista = lista.split(",").map(Number);
+        list = list.split(",").map(Number);
 
-        for (i = 0; i < lista.length; i++) {
-            for (j = 0; j < lista.length - 1; j++) {
-                if (lista[j] > lista[j + 1]) {
-                    let troca = 0
-                    troca = lista[j];
-                    lista[j] = lista[j + 1];
-                    lista[j + 1] = troca;
+        for (i = 0; i < list.length; i++) {
+            for (j = 0; j < list.length - 1; j++) {
+                if (list[j] > list[j + 1]) {
+                    var swap = 0
+                    swap = list[j];
+                    list[j] = list[j + 1];
+                    list[j + 1] = swap;
                 }
             }
         }
-
-        for (i = 0; i < lista.length; i++) {
-            if (lista[i] == focus) {
+        
+        for (i = 0; i < list.length; i++) {
+            if (list[i] == focus) {
                 document.querySelector("#value").innerHTML = "Posição: " + (i + 1) + "ª";
             }
         }
-        document.querySelector("#lista").innerHTML = "Lista ordenada: " + lista;
+        document.querySelector("#list").innerHTML = "Lista ordenada: " + list;
     }
 }
 
@@ -89,5 +89,5 @@ function reset() {
     document.querySelector("#troco2").innerHTML = "";
     document.querySelector("#troco1").innerHTML = "";
     document.querySelector("#value").innerHTML = "";
-    document.querySelector("#lista").innerHTML = "";
+    document.querySelector("#list").innerHTML = "";
 }
