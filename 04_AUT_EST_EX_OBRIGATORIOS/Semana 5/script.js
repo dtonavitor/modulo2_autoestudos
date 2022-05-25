@@ -50,9 +50,32 @@ function calculatePrice() {
    document.querySelector("#troco1").innerHTML = nota1 + " notas de R$1";
 }
 
+function binarySearch(list, focus){
+    var start = 0;
+    var end = list.length - 1;
+    
+    while (start <= end) {
+        var middle = Math.floor((start + end) / 2);
+        console.log(list);
+    
+        if (list[middle] == focus) {
+            // found the key
+            return middle + 1;
+        } else if (list[middle] < focus) {
+            // continue searching to the right
+            start = middle + 1;
+        } else {
+            // search searching to the left
+            end = middle - 1;
+        }
+    }
+    // key wasn't found
+    return -1;
+}
+
 function order() {
-    var focus = document.querySelector("#focus").value
     var list = document.querySelector("#array").value;
+    var focus = document.querySelector("#focus").value;
     if (list.includes(" ")) {
         document.querySelector("#list").innerHTML = "Input Inválido";
     }
@@ -69,12 +92,8 @@ function order() {
                 }
             }
         }
-        
-        for (i = 0; i < list.length; i++) {
-            if (list[i] == focus) {
-                document.querySelector("#value").innerHTML = "Posição: " + (i + 1) + "ª";
-            }
-        }
+
+        document.querySelector("#value").innerHTML = "Posição: " + (binarySearch(list, focus)) + "ª";
         document.querySelector("#list").innerHTML = "Lista ordenada: " + list;
     }
 }
