@@ -55,21 +55,22 @@ function binarySearch(list, focus){
     var end = list.length - 1;
     
     while (start <= end) {
+
         var middle = Math.floor((start + end) / 2);
         console.log(list);
     
         if (list[middle] == focus) {
-            // found the key
             return middle + 1;
-        } else if (list[middle] < focus) {
-            // continue searching to the right
+        } 
+
+        else if (list[middle] < focus) {
             start = middle + 1;
-        } else {
-            // search searching to the left
+        } 
+
+        else {
             end = middle - 1;
         }
     }
-    // key wasn't found
     return -1;
 }
 
@@ -93,8 +94,14 @@ function order() {
             }
         }
 
-        document.querySelector("#value").innerHTML = "Posição: " + (binarySearch(list, focus)) + "ª";
         document.querySelector("#list").innerHTML = "Lista ordenada: " + list;
+
+        if (binarySearch(list, focus) == -1) {
+            document.querySelector("#value").innerHTML = "Valor não encontrado"
+        }
+        else {
+            document.querySelector("#value").innerHTML = "Posição: " + (binarySearch(list, focus)) + "ª";
+        }
     }
 }
 
