@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>Exercícios Semana 7</title>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <button onclick="reset()">Resetar tudo</button>
+        <div>
+            <h1>Exercício 1</h1>
+            <div class="container">
+                <p>Iinforme a quantidade de um produto em um valor inteiro: </p>
+                <input type="number" id = "num"/>
+                <button onclick="addOne()">Adicionar uma unidade</button>
+                <button onclick="subtractOne()">Subtrair uma unidade</button>
+                <br/>
+                <p id="result"></p>
+                <hr/>
+            </div>
+        </div>
+        <div>
+            <h1>Exercício 2</h1>
+            <div class="container">
+                <p>Informe um valor: </p>
+                <input type="text" id = "val1"/>
+                <p>Informe outro valor: </p>
+                <input type="text" id = "val2"/>
+                <button onclick="change()">Trocar</button>
+                <hr/>
+            </div>
+        </div>
+        <div>
+            <h1>Exercício 3</h1>
+            <div class="container">
+                <p>Informe o número de seu celular no formato "(XX)XXXXX-XXXX": </p>
+                <input type="text" id ="phone" maxlength="14"/>
+                <button onclick="check()">Checar</button>
+                <br/>
+                <p id="check"></p>
+                <hr/>
+            </div>
+        </div>
+        <div>
+            <h1>Exercício 4</h1>
+            <div class="container">
+                <p>Informe o número de pessoas: </p>
+                <input type="number" id = "people"/>
+                <p>Informe o período: </p>
+                <input type="radio" id = "periodD" name="period"/>
+                <label for="periodD">Diurno</label>
+                <input type="radio" id = "periodN" name="period"/>
+                <label for="periodN">Noturno</label></br></br>
+                <button onclick="calculate()">Total da Compra</button>
+                <br/>
+                <p id="value"></p>
+                <hr/>
+            </div>
+        </div>
+        <div>
+            <h1>Exercício 5</h1>
+            <div class="container">
+                <p>Informe o número de alunos: </p>
+                <input type="number" id = "students"/>
+                <button onclick="students()">Adicionar notas</button>
+            </div>
+            <div id="grades">
+
+            </div>
+        </div>
+    </body>
+</html>
