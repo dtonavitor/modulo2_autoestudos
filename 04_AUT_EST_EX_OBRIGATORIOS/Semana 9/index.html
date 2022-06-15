@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>Exercícios Semana 7</title>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <div>
+            <h1>Exercício 1</h1>
+            <div class="container">
+                <p>Informe um número de 3 dígitos: </p>
+                <input type="number" id = "num" maxlength="3"/>
+                <button onclick="centena()">Calcular</button>
+                <br/>
+                <p id="result"></p>
+                <hr/>
+            </div>
+        </div>
+        <div>
+            <h1>Exercício 2</h1>
+            <div class="container">
+                <p>Informe um valor: </p>
+                <input type="number" id="val"/>
+                <button onclick="sum()">Calcular</button>
+                <br/>
+                <p id="sum"></p>
+                <hr/>
+            </div>
+        </div>
+        <div>
+            <h1>Exercício 3</h1>
+            <div class="container">
+                <p>Informe um nome: </p>
+                <input type="text" id ="name1"/>
+                <p>Informe outro nome: </p>
+                <input type="text" id ="name2"/>
+                <p>Informe um último nome: </p>
+                <input type="text" id ="name3"/>
+                <button onclick="order()">Ordenar</button>
+                <br/>
+                <p id="check"></p>
+                <hr/>
+            </div>
+        </div>
+        <div>
+            <h1>Exercício 4</h1>
+            <div class="container">
+                <p>Informe o n-ésimo termo: </p>
+                <input type="number" id = "n"/>
+                <button onclick="fibonacci()">Fibonacci</button>
+                <br/>
+                <p id="series"></p>
+                <hr/>
+            </div>
+        </div>
+        <div>
+            <h1>Exercício 5</h1>
+            <div class="container">
+                <p>Informe um valor: </p>
+                <input type="number" id = "val1"/>
+                <p>Informe outro valor: </p>
+                <input type="number" id = "val2"/>
+                <button onclick="prime()">Calcular</button>
+                <br/>
+                <p id="prime"></p>
+            </div>
+            <button onclick="reset()">Resetar tudo</button>
+        </div>
+    </body>
+</html>
