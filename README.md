@@ -20,3 +20,4 @@ Minhas entregas estão definidas aqui:
 <a href="https://github.com/dtonavitor/modulo2_autoestudos/tree/main/04_AUT_EST_EX_OBRIGATORIOS/Semana%205"> 19/05/2022 - Entrega 2 (Resolução de problemas com algoritmos - semana 5)</a>
 <br/>
 <a href="https://github.com/dtonavitor/modulo2_autoestudos/tree/main/04_AUT_EST_EX_OBRIGATORIOS/Semana%207"> 03/06/2022 - Entrega 3 (Resolução de problemas com algoritmos - semana 7)</a>
+<a href="https://github.com/dtonavitor/modulo2_autoestudos/tree/main/04_AUT_EST_EX_OBRIGATORIOS/Semana%209"> 15/06/2022 - Entrega 4 (Resolução de problemas com algoritmos - semana 9)</a>
